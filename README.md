@@ -22,7 +22,7 @@
 
 <br>
 
-![Images](/4 Pipelines.png)
+![Images](/4-Pipelines.png)
 
 <br>
 
