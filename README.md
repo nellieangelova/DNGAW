@@ -18,13 +18,36 @@
 
 <br>
 
-> When it comes to genome analysis, you can choose out of three different images, depending on your needs and your data. Here is a brief explanation for each of them:
+> When it comes to genome analysis, you can choose out of four different images, depending on your needs and your data. Here is a brief explanation for each of them:
 
 <br>
 
-**QTQMinION**
+![Images](/4 Pipelines.png)
 
-> QTQMinION is an image suitable for those who want to run a simple quality control of their MinION data, before and after their trimming. It actually performs quality check, trimming of the raw data and quality check all over again. The results of the image are three, located in the same directory your MinION raw data live in:
+<br>
+
+**A. QTQIllumina**
+
+> QTQIllumina is an image suitable for those who want to run a simple quality control of their short reads data, before and after their trimming, when planning to use long and short reads combination for assembling a genome. It actually performs quality check, trimming of the raw data and quality check all over again. The results of the image are the following, located in the same directory your raw data live in:
+
+1. One directory that contains the now trimmed short data, named *trimmomatic_output*
+2. One directory that contains the results of the quality control before trimming the short reads, named *Multiq_raw_report*
+3. One directory that contains the results of the quality control after trimming the short reads, named *Multiq_trimmed_report*
+
+> Here are the tools used for this analysis:
+
+| Tools       | Description        | Version |
+| ------------- |:-------------:| -----:|
+| fastqc     | Quality check |  |
+| Multiqc     | Quality check |  |
+| Trimmomatic    | Trimming     |   |
+
+<br>
+
+***
+**B. QTQMinION**
+
+> QTQMinION is an image suitable for those who want to run a simple quality control of their MinION data, before and after their trimming. It actually performs quality check, trimming of the raw data and quality check all over again. The results of the image are again, the following three, located in the same directory your MinION raw data live in:
 
 1. One fastq file that contains the now trimmed data, named *porechop_output.fastq*
 2. One directory that contains the results of the quality control before trimming, named *Nano_Raw-report*
@@ -42,7 +65,7 @@
 ***
 
 
-**LongGA**
+**C. LongGA**
 
 > LongGA is an image suitable for those who want to run a whole genome assembly analysis from start to end, and got only long MinION reads at their disposal. Here are the tools in the order they are used by the pipeline, and all the results the image is spawning: 
 >> QTQMinION is a part of LongGA
@@ -69,7 +92,7 @@
 
 ***
 
-**Long_Short_GA**
+**D. Long_Short_GA**
 
 > Long_Short_GA is an image suitable for those who want to run a whole genome assembly analysis from start to end, and got both long MinION reads and short Illumina reads at their disposal. Here are the tools in the order they are used by the pipeline, and all the results the image is spawning: 
 >> Long_GA is a part of Long_Short_GA
@@ -108,7 +131,7 @@
 1. A server that has Singularity installed
 2. The image of the pipeline you wish to use for your analysis
 3. The corresponding configuration file along with the image, that lets you define different parameters for the analysis
-4. A script that submits the image as a job into the nodes of your claster
+4. A script that submits the image as a job into the nodes of your cluster
 
 
 ## **Breaking down the steps that lead to the analysis**
