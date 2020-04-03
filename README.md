@@ -18,6 +18,91 @@
 
 <br>
 
+> When it comes to genome analysis, you can choose out of three different images, depending on your needs and your data. Here is a brief explanation for each of them:
+
+<br>
+
+**QTQMinION**
+
+> QTQMinION is an image suitable for those who want to run a simple quality control of their MinION data, before and after their trimming. It actually performs quality check, trimming of the raw data and quality check all over again. The results of the image are three, located in the same directory your MinION raw data live in:
+
+1. One fastq file that contains the now trimmed data, named *porechop_output.fastq*
+2. One directory that contains the results of the quality control before trimming, named *Nano_Raw-report*
+3. One directory that contains the results of the quality control after the trimming, named *Nano_Trimmed-report*
+
+> Here are the tools used for this analysis:
+
+| Tools       | Description        | Version |
+| ------------- |:-------------:| -----:|
+| NanoPlot     | Quality check |  |
+| Porechop    | Trimming     |   |
+
+<br>
+
+***
+
+
+**LongGA**
+
+> LongGA is an image suitable for those who want to run a whole genome assembly analysis from start to end, and got only long MinION reads at their disposal. Here are the tools in the order they are used by the pipeline, and all the results the image is spawning: 
+>> QTQMinION is a part of LongGA
+
+1. One fastq file that contains the now trimmed data, named *porechop_output.fastq*
+2. One directory that contains the results of the quality control before trimming, named *Nano_Raw-report*
+3. One directory that contains the results of the quality control after the trimming, named *Nano_Trimmed-report*
+4. One directory called *Assemblies*, which will actually contain all the assemblies made through the procedure and polishing steps alongside the final assembly. 
+
+> Here are the tools used for this analysis:
+
+| Tools       | Description        | Version |
+| ------------- |:-------------:| -----:|
+| NanoPlot     | Quality check |  |
+| Porechop    | Trimming     |   |
+| Flye   | Assembler  |  2.6 |
+| Busco    | Quality check     |   |
+| Quast   | Quality check     |   |
+| Racon   | Polishing     |   |
+| Medaka   | Polishing    |   |
+
+
+<br>
+
+***
+
+**Long_Short_GA**
+
+> Long_Short_GA is an image suitable for those who want to run a whole genome assembly analysis from start to end, and got both long MinION reads and short Illumina reads at their disposal. Here are the tools in the order they are used by the pipeline, and all the results the image is spawning: 
+>> Long_GA is a part of Long_Short_GA
+
+1. One fastq file that contains the now trimmed long data, named *porechop_output.fastq*
+2. One directory that contains the results of the quality control before trimming the long reads, named *Nano_Raw-report*
+3. One directory that contains the results of the quality control after trimming the long reads, named *Nano_Trimmed-report*
+4. One directory that contains the now trimmed short data, named *trimmomatic_output*
+5. One directory that contains the results of the quality control before trimming the short reads, named *Multiq_raw_report*
+6. One directory that contains the results of the quality control after trimming the short reads, named *Multiq_trimmed_report*
+7. One directory called *Assemblies*, which will actually contain all the assemblies made through the procedure and polishing steps alongside the final assembly. 
+
+> Here are the tools used for this analysis:
+
+| Tools       | Description        | Version |
+| ------------- |:-------------:| -----:|
+| fastqc     | Quality check |  |
+| Trimmomatic     | Trimming |  |
+| Multiqc     | Quality check |  |
+| NanoPlot     | Quality check |  |
+| NanoPlot     | Quality check |  |
+| Porechop    | Trimming     |   |
+| Flye   | Assembler  |  2.6 |
+| Busco    | Quality check     |   |
+| Quast   | Quality check     |   |
+| Racon   | Polishing     |   |
+| Medaka   | Polishing    |   |
+| Pilon  | Polishing    |   |
+
+<br>
+
+***
+
 > Thus, in order for you to run your analysis in your organism's or industry's server, all you need is:
 
 1. A server that has Singularity installed
@@ -28,10 +113,11 @@
 
 ## **Breaking down the steps that lead to the analysis**
 > Having found the image that correspond to the analysis you need, download it and copy it along with the configuration file in the *home folder* of your cluster account. A simple cp or a scp will do the trick. Once you're done, open the configuration file with *nano* to edit it. The configuration file is probably the most important component for your analysis to work, so take your time and double check all the paths and the parameters needed here. The file is made to work for all the currently available analyses, so your intervention and filling will in fact let the whole system know which image you are going to use and thus the goal of your chosen pipeline, so make sure to fill the right variables in order for your image to be executed properly. Inside the configuration file you will also find some requirements that your raw data should fullfil. If your data or data directories do not follow the standards, please make the appropriate changes before editing the configurations. <br>
-> Once done with all that, it's time to let the automated workflow do the rest for you. Follow the standars for running a job on your server's cluster to submit the image:
+> Once done with all that, it's time to let the automated workflow do the rest for you. Follow the standars for running a job on your server's cluster to submit the image as follows (replace <image.simg> with the name of the actual image you have chosen):
 ```
 singularity run <image.simg>
 ```
+
 ***
 #### Please credit accordingly:
 > Author: Nellie Angelova, Bioinformatician, Hellenic Centre for Marine Research (HCMR) <br>
