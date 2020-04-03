@@ -22,7 +22,7 @@
 
 <br>
 
-![Images](/Pipelines.png =200)
+![Images](/Pipelines.png)
 
 <br>
 
