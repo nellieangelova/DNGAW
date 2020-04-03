@@ -12,6 +12,27 @@
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;![SCS](/scs.png)
 
 
+> The marriaging of these three tools, create the pipelines and deliver them to you in the form of container images.
+> Each ready to use pipeline is represented by an image, and can be run in every cluster or environment that supports the resources and 3d parties tools needed. 
+>> In order for you to have some impact on the analysis and to also include your preferences in the procedure, the including and careful filling of a configuration file with lots of parameters by the users is mandatory.
+
+<br>
+
+> Thus, in order for you to run your analysis in your organism's or industry's server, all you need is:
+
+1. A server that has Singularity installed
+2. The image of the pipeline you wish to use for your analysis
+3. The corresponding configuration file along with the image, that lets you define different parameters for the analysis
+4. A script that submits the image as a job into the nodes of your claster
+
+
+## **Breaking down the steps that lead to the analysis**
+> Having found the image that correspond to the analysis you need, download it and copy it along with the configuration file in the *home folder* of your cluster account. A simple cp or a scp will do the trick. Once you're done, open the configuration file with *nano* to edit it. The configuration file is probably the most important component for your analysis to work, so take your time and double check all the paths and the parameters needed here. The file is made to work for all the currently available analyses, so your intervention and filling will in fact let the whole system know which image you are going to use and thus the goal of your chosen pipeline, so make sure to fill the right variables in order for your image to be executed properly. Inside the configuration file you will also find some requirements that your raw data should fullfil. If your data or data directories do not follow the standards, please make the appropriate changes before editing the configurations. <br>
+> Once done with all that, it's time to let the automated workflow do the rest for you. Follow the standars for running a job on your server's cluster to submit the image:
+```
+singularity run <image.simg>
+```
+***
 #### Please credit accordingly:
 > Author: Nellie Angelova, Bioinformatician, Hellenic Centre for Marine Research (HCMR) <br>
 > Coordinator/ Supervisor: Tereza Manoussaki, Researcher, Hellenic Centre for Marine Research (HCMR)
