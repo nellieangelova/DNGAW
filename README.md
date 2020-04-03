@@ -1,4 +1,4 @@
-# **De Novo Genome Assembly Pipeline**
+# **De Novo Genome Assembly Pipelines**
 
 ## Welcome to your ultimate guide for using ready to go, containerized workflows for analyzing genome data.
 
