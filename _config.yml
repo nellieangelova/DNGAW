@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+title: Containerized De Novo Genome Assembly Pipelines
+description: Ready to use container images for various analyses including short, long or both kind of NGS reads.
