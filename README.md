@@ -22,7 +22,8 @@
 
 <br>
 
-![Images](/Pipelines.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+![Images](/4-pipelines.png)
 
 <br>
 
