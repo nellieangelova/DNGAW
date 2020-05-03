@@ -39,9 +39,9 @@
 
 | Tools       | Description        | Version |
 | ------------- |:-------------:| -----:|
-| fastqc     | Quality check |  |
-| Multiqc     | Quality check |  |
-| Trimmomatic    | Trimming     |   |
+| fastqc     | Quality check | 0.11.8 |
+| Multiqc     | Quality check | 1.6 |
+| Trimmomatic    | Trimming     | 0.39  |
 
 <br>
 
@@ -133,9 +133,9 @@
 
 | Tools       | Description        | Version |
 | ------------- |:-------------:| -----:|
-| fastqc     | Quality check |  |
-| Trimmomatic     | Trimming |  |
-| Multiqc     | Quality check |  |
+| fastqc     | Quality check | 0.11.8 |
+| Trimmomatic     | Trimming | 0.39 |
+| Multiqc     | Quality check | 1.6 |
 | NanoPlot     | Quality check | 1.29.0 |
 | Porechop    | Trimming     | 0.2.3  |
 | Flye   | Assembler  |  2.6 (Internal: KmerGenie: v1.70.16)|
