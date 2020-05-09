@@ -169,5 +169,5 @@ singularity run <image.simg>
 ***
 #### Please credit accordingly:
 > Author: Nellie Angelova, Bioinformatician, Hellenic Centre for Marine Research (HCMR) <br>
-> Coordinator/ Supervisor: Tereza Manoussaki, Researcher, Hellenic Centre for Marine Research (HCMR)
+> Coordinator/ Supervisor: Tereza Manoussaki, Researcher, Hellenic Centre for Marine Research (HCMR) <br>
 > Contact: n.angelova@hcmr.gr
