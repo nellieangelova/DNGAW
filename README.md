@@ -167,22 +167,22 @@ singularity run <image.simg>
 > If you are a developer and you wish to explore our code and learn more about these technologies, ask for access in our GitHub repository for developers and maintainers.
 
 #### Credits and Citations:
-> Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012.
-> Kurtzer GM, Sochat V, Bauer MW (2017), Singularity: Scientific containers for mobility of compute. PLoS ONE 12(5): e0177459. 
-> Crist-Harif et al, Conda, GitHub repo: https://github.com/conda
-> Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
-> Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170.
-> Philip Ewels, Måns Magnusson, Sverker Lundin, Max Käller, MultiQC: summarize analysis results for multiple tools and samples in a single report, Bioinformatics, Volume 32, Issue 19, 1 October 2016, Pages 3047–3048.
-> Wouter De Coster, Svenn D’Hert, Darrin T Schultz, Marc Cruts, Christine Van Broeckhoven, NanoPack: visualizing and processing long-read sequencing data, Bioinformatics, Volume 34, Issue 15, 01 August 2018, Pages 2666–2669.
-> R. Wick, Porechop (2017), GitHub Repo: P.W.D. Charles, Project Title, (2013), GitHub repository, https://github.com/rrwick/Porechop
-> Heng Li, Minimap2: pairwise alignment for nucleotide sequences, Bioinformatics, Volume 34, Issue 18, 15 September 2018, Pages 3094–3100.
+> Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012. <br>
+> Kurtzer GM, Sochat V, Bauer MW (2017), Singularity: Scientific containers for mobility of compute. PLoS ONE 12(5): e0177459. <br> 
+> Crist-Harif et al, Conda, GitHub repo: https://github.com/conda <br>
+> Andrews S. (2010). FastQC: a quality control tool for high throughput sequence data. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc <br>
+> Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170. <br>
+> Philip Ewels, Måns Magnusson, Sverker Lundin, Max Käller, MultiQC: summarize analysis results for multiple tools and samples in a single report, Bioinformatics, Volume 32, Issue 19, 1 October 2016, Pages 3047–3048. <br>
+> Wouter De Coster, Svenn D’Hert, Darrin T Schultz, Marc Cruts, Christine Van Broeckhoven, NanoPack: visualizing and processing long-read sequencing data, Bioinformatics, Volume 34, Issue 15, 01 August 2018, Pages 2666–2669. <br>
+> R. Wick, Porechop (2017), GitHub Repo: P.W.D. Charles, Project Title, (2013), GitHub repository, https://github.com/rrwick/Porechop <br>
+> Heng Li, Minimap2: pairwise alignment for nucleotide sequences, Bioinformatics, Volume 34, Issue 18, 15 September 2018, Pages 3094–3100. <br>
 > Li H, Handsaker B, Wysoker A, et al. The Sequence Alignment/Map format and SAMtools. Bioinformatics. 2009;25(16):2078‐2079.
-> Vaser R, Sović I, Nagarajan N, Šikić M. Fast and accurate de novo genome assembly from long uncorrected reads. Genome Res. 2017;27(5):737‐746.
-> Oxford Nanopore Technologies, Medaka 2018, GitHub repo: https://github.com/nanoporetech/medaka
-> Bruce J. Walker, Thomas Abeel, Terrance Shea, Margaret Priest, Amr Abouelliel, Sharadha Sakthikumar, Christina A. Cuomo, Qiandong Zeng, Jennifer Wortman, Sarah K. Young, Ashlee M. Earl (2014) Pilon: An Integrated Tool for Comprehensive Microbial Variant Detection and Genome Assembly Improvement. PLoS ONE 9(11): e112963.
-> Gurevich A, Saveliev V, Vyahhi N, Tesler G. QUAST: quality assessment tool for genome assemblies. Bioinformatics. 2013;29(8):1072‐1075
-> Felipe A. Simão, Robert M. Waterhouse, Panagiotis Ioannidis, Evgenia V. Kriventseva, Evgeny M. Zdobnov, BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs, Bioinformatics, Volume 31, Issue 19, 1 October 2015, Pages 3210–3212.
->Rayan Chikhi, Paul Medvedev, Informed and automated k-mer size selection for genome assembly, Bioinformatics, Volume 30, Issue 1, 1 January 2014, Pages 31–37.
+> Vaser R, Sović I, Nagarajan N, Šikić M. Fast and accurate de novo genome assembly from long uncorrected reads. Genome Res. 2017;27(5):737‐746. <br>
+> Oxford Nanopore Technologies, Medaka 2018, GitHub repo: https://github.com/nanoporetech/medaka <br>
+> Bruce J. Walker, Thomas Abeel, Terrance Shea, Margaret Priest, Amr Abouelliel, Sharadha Sakthikumar, Christina A. Cuomo, Qiandong Zeng, Jennifer Wortman, Sarah K. Young, Ashlee M. Earl (2014) Pilon: An Integrated Tool for Comprehensive Microbial Variant Detection and Genome Assembly Improvement. PLoS ONE 9(11): e112963. <br>
+> Gurevich A, Saveliev V, Vyahhi N, Tesler G. QUAST: quality assessment tool for genome assemblies. Bioinformatics. 2013;29(8):1072‐1075 <br>
+> Felipe A. Simão, Robert M. Waterhouse, Panagiotis Ioannidis, Evgenia V. Kriventseva, Evgeny M. Zdobnov, BUSCO: assessing genome assembly and annotation completeness with single-copy orthologs, Bioinformatics, Volume 31, Issue 19, 1 October 2015, Pages 3210–3212. <br>
+>Rayan Chikhi, Paul Medvedev, Informed and automated k-mer size selection for genome assembly, Bioinformatics, Volume 30, Issue 1, 1 January 2014, Pages 31–37. <br>
 
 
 #### Please credit accordingly:
