@@ -164,7 +164,7 @@ singularity run <image.simg>
 
 ***
 #### Developers:
-> If you are a developer and you wish to explore our code and learn more about these technologies, ask for access in our GitHub repository for developers and maintainers.
+> If you are a developer and you wish to explore our code and learn more about these technologies, ask for access to our GitHub repository for developers and maintainers.
 
 #### Credits and Citations:
 > * Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012. <br>
