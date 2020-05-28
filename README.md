@@ -160,9 +160,12 @@
 singularity run <image.simg>
 ```
 > When the workflow is done, check carefully if all the files that should have been spawned are present in your directories, as and their status in the *Summary.txt* file. Ignore any other file mentioned, that may be spawned intermediately and has already been deleted by the workflow a priori. 
->> Note: The LGA and (especially) LSGA pipelines spawn a lot of files and data. Bare in mind that you should have enough space before running them in your repositories. The needed space varies, because the round of for example the Pilon rounds are not predetermined, and thus the number of results may varry. 
+>> Note: The LGA and (especially) LSGA pipelines spawn a lot of files and data. Bare in mind that you should have enough space before running them in your repositories. The needed space varies, because the round of for example the Pilon rounds are not predetermined, and thus the number of outputs is not known a priori. 
 
 ***
+#### Pipelines:
+> If you wish to use our images, get in contact with us for the necessary files.
+
 #### Developers:
 > If you are a developer and you wish to explore our code and learn more about these technologies, ask for access to our GitHub repository for developers and maintainers.
 
