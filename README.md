@@ -93,7 +93,7 @@
 | Flye   | Assembler  |  2.6 |
 | Busco    | Quality check     |  3.0 (Internal Blast: v2.2) |
 | Quast   | Quality check     |  5.0.2 |
-| Racon   | Polishing     |  1.4.3 |
+| Racon   | Polishing     |  1.4.12 |
 | Medaka   | Polishing    | 0.9.2  |
 
 
