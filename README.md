@@ -137,7 +137,7 @@
 | Flye   | Assembler  |  2.6 (Internal: KmerGenie: v1.70.16)|
 | Busco    | Quality check     |  3.0 (Internal Blast: v2.2) |
 | Quast   | Quality check     |  5.0.2 |
-| Racon   | Polishing     |  1.4.3 |
+| Racon   | Polishing     |  1.4.12 |
 | Medaka   | Polishing    | 0.9.2  |
 | Pilon  | Polishing    |  1.23 (Internal: Samtools: v1.9, Minimap2: v2.17)|
 
@@ -155,12 +155,12 @@
 
 ## **Breaking down the steps that lead to the analysis**
 > Having found the image that correspond to the analysis you need, download it and copy it along with the configuration file in the *home folder* of your cluster account. A simple cp or a scp will do the trick. Once you're done, open the configuration file with *nano* to edit it. The configuration file is probably the most important component for your analysis to work, so take your time and double check all the paths and the parameters needed here. The file is made to work for all the currently available analyses, so your intervention and filling will in fact let the whole system know which image you are going to use and thus the goal of your chosen pipeline, so make sure to fill the right variables in order for your image to be executed properly. Inside the configuration file you will also find some requirements that your raw data should fulfill. If your data or data directories do not follow the standards, please make the appropriate changes before editing the configurations. The cleaness of your directories is also very important. The workflow generates many intermediate files while running, and deletes them when not using them anymore, in order for your outputs to be carefully and tidy arranged, and your account free of unnecessary files. In order for the workflow to not mistakenly read or delete a file with the same name or regular expression of the file it is truly looking for, the directory where you copy the image and the configuration file into should be empty, and the directories of your raw data should not contain **anything** more or less than the data itself. Clean the necessary directories before filling the configuration file, to avoid any mistakes. If you wish to re-run the workflow for any reason (errors or verifications), make sure to delete or move **any** already created output before proceeding.<br>
-> Once done with all that, it's time to let the automated workflow do the rest for you. Follow the standars for running a job on your server's cluster and submit the image as follows (replace with the name of the actual image you have chosen, and add any path needed):
+> Once done with all that, it's time to let the automated workflow do the rest for you. Follow the standars for running a job on your server's cluster and submit the image as follows (replace <image.simg> with the name of the actual image you have chosen, and add any path needed):
 ```
 singularity run <image.simg>
 ```
 > When the workflow is done, check carefully if all the files that should have been spawned are present in your directories, as and their status in the *Summary.txt* file. Ignore any other file mentioned, that may be spawned intermediately and has already been deleted by the workflow a priori. 
->> Note: The LGA and (especially) LSGA pipelines spawn a lot of files and data. Bare in mind that you should have enough space before running them in your repositories. The needed space varies, because the round of for example the Pilon rounds are not predetermined, and thus the number of outputs is not known a priori. 
+>> Note: The LGA and (especially) LSGA pipelines spawn a lot of files and data. Bare in mind that you should have enough space before running them in your repositories. The needed space varies, because the round of for example the Pilon rounds are not predetermined, and thus the number of outputs is not known a priori. The optimity is accomplished when running with cpus multiples of ten (10,20,30 etc.).
 
 ***
 #### Pipelines:
